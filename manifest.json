@@ -1,6 +1,6 @@
 {
     "name": "DKCrewModpack",
-    "version_number": "1.0.0",
+    "version_number": "1.1.0",
     "website_url": "https://github.com/gitluin/ror2-dk-pack",
     "description": "Modpack for the DK Crew",
     "dependencies": [
@@ -28,6 +28,7 @@
         "Moffein-Ancient_Wisp-1.5.1",
         "ThinkInvis-TILER2-7.3.1",
         "ThinkInvis-TinkersSatchel-3.4.1",
-        "Fr4nsson-MultiplayerPause-1.0.2"
+        "Fr4nsson-MultiplayerPause-1.0.2",
+        "xiaoxiao921-BadAssEngi-1.3.6"
     ]
   }
