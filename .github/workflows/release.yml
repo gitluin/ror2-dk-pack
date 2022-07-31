@@ -1,0 +1,22 @@
+name: Create Release on tag
+on: 
+  push:
+    tags:
+    - '*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v2
+    - name: Archive Release
+      uses: thedoctor0/zip-release@main
+      with:
+        type: 'zip'
+        filename: 'release.zip'
+        exclusions: '*.git*'
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: 'release.zip'
+        token: ${{ secrets.GITHUB_TOKEN }}
